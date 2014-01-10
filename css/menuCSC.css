@@ -1,0 +1,114 @@
+#menuCSC,#menuCSC li{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+#menuCSC{
+  padding-left: 11%;
+  width:89%;
+  margin:0px auto;
+  border:1px solid #222;
+  background-color:#111;
+  background-image:linear-gradient(#444,#111);
+  border-radius:1px;
+  box-shadow:0 1px 1px #777;
+}
+#menuCSC:before,
+#menuCSC:after{
+  content:"";
+  display:table;
+}
+#menuCSC:after{
+  clear:both;
+}
+#menuCSC{
+  zoom:1;
+}
+#menuCSC li{
+  float:left;
+  border-right:1px solid #222;
+  box-shadow:1px 0 0 #444;
+  position:relative;
+}
+#menuCSC a{
+  float:left;
+  padding:12px 20px;
+  color:#999;
+  text-transform:uppercase;
+  font:bold 12px Arial,Helvetica;
+  text-decoration:none;
+  text-shadow:0 1px 0 #000;
+}
+#menuCSC li:hover > a{
+  color:#fafafb;
+}
+*html #menuCSC li a:hover { /* IE6 only */
+	color: #fafafb;
+}
+#menuCSC ul{
+  padding:0;
+  margin:20px 0 0 0;
+  _margin:0;
+  opacity:0;
+  visibility:hidden;
+  position:absolute;
+  top:40px;
+  left:0;
+  z-index:1;
+  background:#444;
+  background: linear-gradient(#444, #111);
+	box-shadow: 0 -1px 0 rgba(255,255,255,.3);	
+	border-radius: 3px;
+	transition: all .2s ease-in-out;  
+}
+#menuCSC li:hover > ul{
+  opacity:1;
+  visibility:visible;
+  margin:0;
+}
+
+#menuCSC ul li{
+  float:none;
+  display:block;
+  border:0;
+  _line-height:0;
+  box-shadow:0 1px 0 #111, 0 2px 0 #666;
+}
+#menuCSC ul li:last-child {   
+	box-shadow: none;    
+}
+#menuCSC ul a {    
+	padding: 10px;
+	width: 130px;
+	_height: 10px; /*IE6 only*/
+	display: block;
+	white-space: nowrap;
+	float: none;
+	text-transform: none;
+}
+
+#menuCSC ul a:hover {
+	/*background-color: #0186bb;*/
+	background-image: linear-gradient(#04acec, #0186ba);
+}
+#menuCSC ul li:first-child > a {
+	border-radius: 3px 3px 0 0;
+}
+
+#menuCSC ul li:first-child > a:after {
+	content: '';
+	position: absolute;
+	left: 40px;
+	top: -6px;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-bottom: 6px solid #444;
+}
+
+#menuCSC ul li:first-child a:hover:after {
+	border-bottom-color: #04acec; 
+}
+
+#menuCSC ul li:last-child > a {
+	border-radius: 0 0 3px 3px;
+}

@@ -1,0 +1,182 @@
+/* tables */
+table.tablesorter {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	background-color: #CDCDCD;
+	margin:2px 0pt 2px;
+	font-size: 8pt;
+        border:0px solid #000;
+	width: 900px;
+	text-align: left;
+}
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+	background: #e6EEEE url(bg_Header.png);
+	border: 1px solid #FFF;
+	font-size: 8pt;
+	padding: 4px;
+}
+
+table.tablesorter thead tr th:hover {
+	
+	/*background: #ccc url(bg_HeaderHover.png);;*/
+	border: 1px solid #FFF;
+	font-size: 8pt;
+	padding: 4px;
+        cursor: pointer;
+}
+
+
+table.tablesorter thead tr .header {
+	background-image: url(bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+table.tablesorter tbody td {
+	
+	color: #3D3D3D;
+	padding: 4px;
+	background-color: #FFF;
+	vertical-align: top;
+}
+
+td:hover{
+	/*color: #3D3D3D;*/
+	/*padding: 4px;*/
+	/*background-color: #000;*/
+	/*vertical-align: top;*/
+	
+}
+
+
+table.tablesorter tbody tr.odd td {	
+	background-color:#F0F0F6;
+}
+
+
+
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(asc.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url(desc.gif);
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+    background-color: #8dbdd8;
+}
+
+
+.ts_divContPaginador{
+    float:left;
+    border:0px solid #000;
+    margin-left: 5.5%;
+    padding:0px;    
+    width:auto;
+}
+
+.ts_objeto{
+    border:0px solid #000;
+    padding-top: 2px;
+    padding-left: 1px;
+    padding-right: 4px;
+    float:left;
+}
+
+.ts_CboPag{
+    border:0px solid #000;
+    padding-top: 0px;
+    padding-left: 4px;
+    padding-right: 4px;
+    float:left;
+}
+
+
+.ts_divRefresh{
+    border:0px solid #000;
+    padding-top: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    float:left;
+    cursor: pointer;
+}
+
+
+.ts_divPagAnterior{
+    border:0px solid #000;
+    padding-top: 2px;
+    float:left;
+    cursor:pointer;
+}
+
+.ts_divPagSiguiente{
+    border:0px solid #000;
+    padding-top: 2px;
+    float:left;
+    cursor:pointer;
+}
+
+
+
+
+.ts_txtPaginador{
+    width:40px;
+    
+}
+
+.ts_inputNroPag{
+    width:50px;
+    background: #fff url(bg_InputText.png);
+    text-align:center;
+    height: 15px;
+    margin-left:   4px;
+    margin-right: 4px;
+    margin-bottom: 2px;
+    border:1px solid #a7a7a7;
+    color:#5f5f5f;
+    -moz-border-radius-topleft:5px;
+    -moz-border-radius-topright:5px;
+    -moz-border-radius-bottomleft:5px;
+    -moz-border-radius-bottomright:5px;
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -webkit-border-bottom-left-radius:5px;
+    -webkit-border-bottom-right-radius:5px;
+}
+
+
+/**********RollOver Widget Css******/
+table.tablesorter tr.hover td {
+	background-color: #E0E0EF;
+}
+table.tablesorter tr.hover.even td {
+	background-color: #E0E0EF;
+}
+table.tablesorter tr.hover.odd td {
+	background-color: #E0E0EF;
+}
+table.tablesorter tr.selected td {
+	background-color: #8DBDD8;
+}
+table.tablesorter tr.selected.even td {
+	background-color: #8DBDD8;
+}
+table.tablesorter tr.selected.odd td {
+	background-color: #8DBDD8;
+        cursor:pointer;
+}
+table.tablesorter tr.selected.hover td {
+	background-color: #B5D0DF;
+}
+
+.paginadoBusq {
+    -moz-background-clip:border;
+    -moz-background-inline-policy:continuous;
+    -moz-background-origin:padding;
+    -moz-border-radius-bottomleft:7px;
+    -moz-border-radius-bottomright:7px;
+    background: #d9e4ea;
+    border:1px solid #CCCCCC;
+    float:left;
+    width:100%;
+}
+/**********End RollOver Widget Css****/

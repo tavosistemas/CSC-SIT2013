@@ -1,0 +1,52 @@
+/*
+ * SimpleModal OSX Style Modal Dialog
+ * http://www.ericmmartin.com/projects/simplemodal/
+ * http://code.google.com/p/simplemodal/
+ *
+ * Copyright (c) 2010 Eric Martin - http://ericmmartin.com
+ *
+ * Licensed under the MIT license:
+ *   http://www.opensource.org/licenses/mit-license.php
+ *
+ * Revision: $Id: osx.css 238 2010-03-11 05:56:57Z emartin24 $
+ *
+ */
+
+body {height:100%; margin:0;}
+#osx-modal-content, #osx-modal-data {display:none;}
+
+/* Overlay */
+#osx-overlay {background-color:#000; cursor:wait;}
+
+/* Container */
+#osx-container {background-color:#fefffe;color:#000; font-family:"Lucida Grande",Arial,sans-serif; font-size:.9em; padding-bottom:4px; width:600px; height:auto;  -moz-border-radius-bottomleft:6px; -webkit-border-bottom-left-radius:6px; -moz-border-radius-bottomright:6px; -webkit-border-bottom-right-radius:6px; -moz-box-shadow:0 0 64px #000; -webkit-box-shadow:0 0 64px #000;}
+#osx-container a {color:#ddd;}
+#osx-container #osx-modal-title {color:#000; background-color:#e2e3e2;border-bottom:1px solid #ccc; font-weight:bold; padding:6px 8px; text-shadow:0 1px 0 #f4f4f4;}
+#osx-container .close {display:none; position:absolute; right:0; top:0;}
+#osx-container .close a {display:block; color:#777; font-size:.8em; font-weight:bold; padding:6px 12px 0; text-decoration:none; text-shadow:0 1px 0 #f4f4f4;}
+#osx-container .close a:hover {color:#000;}
+#osx-container #osx-modal-data {padding:6px 12px;}
+#osx-container h2 {margin:4px 0 6px; background: none;}
+#osx-container p {margin-bottom:10px;}
+#osx-container span {color:#777; font-size:.9em;}
+
+
+.divFormEmail{
+    float:left; padding: 5px; border: 1px solid #ccc; width: 98%;
+}
+
+.rowFormMal{
+    float:left; margin: 3px; width: 100%
+}
+
+.lblFormMail{
+    float:left; margin-top: 3px; border:0px solid #000; padding-top: 3px; width: 15%;
+}
+
+.inputFormMail{
+    float:left; margin-top: 3px; border:0px solid #000;
+}
+
+.divMsjErrorEmail{
+    color:red; font-size: 10px; width: 100%; float:left; display: none; padding-left: 5px;
+}
