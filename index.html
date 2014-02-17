@@ -7,181 +7,9 @@
   <link rel="stylesheet" type="text/css" href="css/style-tag.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" type="text/css" href="css/menucsc.css">
-
 	<!-- tabs -->
-		
-		
-
-
 	<script type="text/javascript" src = "http://code.jquery.com/jquery-1.9.1.js"></script>
 	<script type="text/javascript" src = "js/slider.jquery.js"></script>
-  
-<script type="text/javascript">
-
-
-$(this.document).ready(function(){
-
-//alert("Ejmplo");
-var item1 = $('#Servicios');
-var divitem1 = $("#DescripcionServisios");
-
-
-var item2 = $("#Censecar");
-var divitem2 = $("#DescripcionCensecar");
-
-var item3 = $("#AsesoriaLLegar");
-var divitem3 = $("#DescripcioneLegal");
-
-var item4 = $("#Sitios");
-var divitem4 = $("#DescripcionSitios");
-
-var item5 = $("#Soporte");
-var divitem5 = $("#DescripcionSoporte");
-
-var item6 = $("#Contacto");
-var divitem6 = $("#DescripcionContacto");
-
-
-item1.mouseover(function(){
-
-  var mostrar = document.getElementById("DescripcionServisios");
-  mostrar.style.position = "relative";
-  mostrar.style.zIndex = "9999";
-  displayOptions($("#DescripcionServisios"));
-
-});
-item1.mouseout(function(){
-    //alert("desapareser");
-    hideOptions($("#DescripcionServisios"));
-  });
-  divitem1.mouseover(function(){
-    //alert("ejmeplo");
-    displayOptions($("#DescripcionServisios"));
-  });
-  divitem1.mouseout(function(){
-    //alert("desapareser");
-    hideOptions($("#DescripcionServisios"));
-  });
-
-
-  item2.mouseover(function(){
-    //alert("ejmeplo");
-    displayOptions($("#DescripcionCensecar"));
-  });
-  item2.mouseout(function(){
-    //alert("desapareser");
-    hideOptions($("#DescripcionCensecar"));
-  });
-
-
-  divitem2.mouseover(function(){
-    //alert("ejmeplo");
-    displayOptions($("#DescripcionCensecar"));
-  });
-  divitem2.mouseout(function(){
-    //alert("desapareser");
-    hideOptions($("#DescripcionCensecar"));
-  });
-
-  item3.mouseover(function(){
-    //alert("ejmeplo");
-    displayOptions($("#DescripcioneLegal"));
-  });
-  item3.mouseout(function(){
-    //alert("desapareser");
-    hideOptions($("#DescripcioneLegal"));
-  });
-
-  divitem3.mouseover(function(){
-    //alert("ejmeplo");
-    displayOptions($("#DescripcioneLegal"));
-  });
-  divitem3.mouseout(function(){
-    //alert("desapareser");
-    hideOptions($("#DescripcioneLegal"));
-  });
-  item4.mouseover(function(){
-    //alert("ejmeplo");
-    displayOptions($("#DescripcionSitios"));
-  });
-  item4.mouseout(function(){
-    //alert("desapareser");
-    hideOptions($("#DescripcionSitios"));
-  });
-
-  divitem4.mouseover(function(){
-    //alert("ejmeplo");
-    displayOptions($("#DescripcionSitios"));
-  });
-  divitem4.mouseout(function(){
-    //alert("desapareser");
-    hideOptions($("#DescripcionSitios"));
-  });
-
-  item5.mouseover(function(){
-    //alert("ejmeplo");
-    displayOptions($("#DescripcionSoporte"));
-  });
-  item5.mouseout(function(){
-    //alert("desapareser");
-    hideOptions($("#DescripcionSoporte"));
-  });
-  divitem5.mouseover(function(){
-    //alert("ejmeplo");
-    displayOptions($("#DescripcionSoporte"));
-  });
-  divitem5.mouseout(function(){
-    //alert("desapareser");
-    hideOptions($("#DescripcionSoporte"));
-  });
-  item6.mouseover(function(){
-    //alert("ejmeplo");
-    displayOptions($("#DescripcionContacto"));
-  });
-  item6.mouseout(function(){
-    //alert("desapareser");
-    hideOptions($("#DescripcionContacto"));
-  });
-  divitem6.mouseover(function(){
-    //alert("ejmeplo");
-    displayOptions($("#DescripcionContacto"));
-  });
-  divitem6.mouseout(function(){
-    //alert("desapareser");
-    hideOptions($("#DescripcionContacto"));
-  });
-
-});
-
-
-
-//funcion que MUESTRA todos los elementos del menu
-function displayOptions(e){
-  e.show();
-
-};
-//funcion que OCULTA los elementos del menu
-function hideOptions(e){
-  //e.find("li").hide();
-  //e.find("li.active").show();
-  e.hide();
-
-};
-
-$(function() {
-  if ($.browser.msie && $.browser.version.substr(0,1)<7)
-  {
-  $('li').has('ul').mouseover(function(){
-    $(this).children('ul').css('visibility','visible');
-    }).mouseout(function(){
-    $(this).children('ul').css('visibility','hidden');
-    })
-  }
-}); 
-
-
-</script>
-
 </head>
 <body >	
 	<!-- HEADER -->
@@ -195,11 +23,7 @@ $(function() {
                <div class="loginbutton"><a href="http://200.12.125.74">Conectar Sistema SIM@</a> </div>
                <!-- ENDS search -->
            </div>
-           <!-- ENDS wrapper-header -->                    
        </div>
-      <!-- ENDS HEADER -
-      <!-- menu-->
-
  <div>
 
 <ul id="menuCSC">  
@@ -230,242 +54,138 @@ $(function() {
  </div>
 
 
-          <!--  <div id="contenedor">
-                <ul class="menuCSC">
-                    <li> Inicio </li>
-
-                    para activar un menu de forma automatica se nesesita esta clase (class="active") 
-                    <li id="Servicios" >Servicios</li>
-                    <li id="Censecar">Censecar</li>
-                    <li id="AsesoriaLLegar">Asesoria Legar</li>
-                    <li id="Sitios" >Sitios de Interes</li>
-                    <li id="Soporte">Soporte</li>
-                    <li id="Contacto" >Contacto</li>
-                </ul>
-                <span class="clear"></span>
-                <div id="DescripcionServisios" class="contenedor noticias">
-                    <h3>Descipcion de servicios</h3>
-                    <ul>
-                        <li class="active" ><img src="img/bullet.png" alt="-" /> Manifiesto por los Derechos en Internet </li>
-                        <li><img src="img/bullet.png" alt="-" /> Logos que Inspiran Volumen #5</li>
-                        <li><img src="img/bullet.png" alt="-" /> Erasmusu llega a los 6.000 usuarios</li>
-                        <li><img src="img/bullet.png" alt="-" /> Lanzamos web.ontuts.com!</li>
-                    </ul>
-                </div>
-                <div id="DescripcionCensecar" class="contenedor noticias">
-                    <h3>Últimos Tutoriales</h3>
-                    <ul>
-                        <li><img src="img/bullet.png" alt="-" /> Cómo crear bordes redondeados en CSS3</li>
-                        <li><img src="img/bullet.png" alt="-" /> JSONP, llamadas entre dominios</li>
-                        <li><img src="img/bullet.png" alt="-" /> Introducción a Microsoft Silverlight</li>
-                        <li><img src="img/bullet.png" alt="-" /> Cómo aplicar sombra en textos con CSS3</li>
-                        <li><img src="img/bullet.png" alt="-" /> Creando capa de conexión abstracta a base de datos con PHP</li>
-                        <li><img src="img/bullet.png" alt="-" /> Mini Aplicaciones Web con Python y Juno</li>
-                    </ul>
-                </div>
-                <div id="DescripcioneLegal" class="contenedor enlaces">
-                    <h3>Deberías Visitar...</h3>
-                    <ul class = "dropdown"> 
-                        <li><img src="img/bullet.png" alt="-" /> <a href="http://www.plusmusica.com">www.plusmusica.com</a> - Online jukebox!</li>
-                        <li><img src="img/bullet.png" alt="-" /> <a href="http://www.cokidoo.com">www.cokidoo.com</a> - Nuestra startup! :)</li>
-                        <li><img src="img/bullet.png" alt="-" /> <a href="http://www.cokidoo.com">www.pixelartgames.com</a> - Te gustan los juegos pixel art? ;)</li>
-                        <li><img src="img/bullet.png" alt="-" /> <a href="http://www.dmsconsulting.es">www.dmsconsulting.es</a> - Anterior empresa</li>
-                    </ul>
-                </div>
-                <div id="DescripcionSitios"  class="contenedor enlaces">
-                    <h3>Deberías Visitar...</h3>
-                    <ul class = "dropdown"> 
-                        <li><img src="img/bullet.png" alt="-" /> <a href="http://www.plusmusica.com">www.plusmusica.com</a> - Online jukebox!</li>
-                        <li><img src="img/bullet.png" alt="-" /> <a href="http://www.cokidoo.com">www.cokidoo.com</a> - Nuestra startup! :)</li>
-                        <li><img src="img/bullet.png" alt="-" /> <a href="http://www.cokidoo.com">www.pixelartgames.com</a> - Te gustan los juegos pixel art? ;)</li>
-                        <li><img src="img/bullet.png" alt="-" /> <a href="http://www.dmsconsulting.es">www.dmsconsulting.es</a> - Anterior empresa</li>
-                    </ul>
-                </div>
-                <div id="DescripcionSoporte" class="contenedor enlaces">
-                    <h3>Deberías Visitar...</h3>
-                    <ul class = "dropdown"> 
-                        <li><img src="img/bullet.png" alt="-" /> <a href="http://www.plusmusica.com">www.plusmusica.com</a> - Online jukebox!</li>
-                        <li><img src="img/bullet.png" alt="-" /> <a href="http://www.cokidoo.com">www.cokidoo.com</a> - Nuestra startup! :)</li>
-                        <li><img src="img/bullet.png" alt="-" /> <a href="http://www.cokidoo.com">www.pixelartgames.com</a> - Te gustan los juegos pixel art? ;)</li>
-                        <li><img src="img/bullet.png" alt="-" /> <a href="http://www.dmsconsulting.es">www.dmsconsulting.es</a> - Anterior empresa</li>
-                    </ul>
-                </div>
-                <div id="DescripcionContacto"  class="contenedor enlaces">
-                    <h3>Deberías Visitar...</h3>
-                    <ul class = "dropdown"> 
-                        <li><img src="img/bullet.png" alt="-" /> <a href="http://www.plusmusica.com">www.plusmusica.com</a> - Online jukebox!</li>
-                        <li><img src="img/bullet.png" alt="-" /> <a href="http://www.cokidoo.com">www.cokidoo.com</a> - Nuestra startup! :)</li>
-                        <li><img src="img/bullet.png" alt="-" /> <a href="http://www.cokidoo.com">www.pixelartgames.com</a> - Te gustan los juegos pixel art? ;)</li>
-                        <li><img src="img/bullet.png" alt="-" /> <a href="http://www.dmsconsulting.es">www.dmsconsulting.es</a> - Anterior empresa</li>
-                    </ul>
-                </div>
-            </div>-->
-       
-      <!-- Fine de menu-->
-
-
 <div id="main">
                 <!-- wrapper-main -->
                 <div class="wrappermed">
-
-                     
-                    <!-- content -->
-          
-
-                        <!-- Slider -->
-                       <section>
-							<!--<a href ="#" id ="anterior">&laquo;</a>-->
-							<div id="marco">
-								<ul>
-									<li><img src="images/03.jpg"></li>
-									<li><img src="images/02.jpg"></li>
-									<li><img src="images/01.jpg"></li>
-									
-								</ul>
-							</div>
-							<!--<a href ="#" id ="siguiente">&raquo;</a>-->
-						</section>
-						<script type="text/javascript">
-							$('#marco').marquesina('#anterior','#siguiente');
-							//$('#marco').marquesina();
-						</script>
-                        <!-- ENDS Slider -->
-            
-    
-                        
-                            <!-- TABS -->
+                     <section>
+                      		<div id="marco">
+                      				<ul>
+                      									<li><img src="images/03.jpg"></li>
+                      									<li><img src="images/02.jpg"></li>
+                      									<li><img src="images/01.jpg"></li>
+                      					</ul>
+                      			</div>
+                      							<!--<a href ="#" id ="siguiente">&raquo;</a>-->
+                      			</section>
+                      				<script type="text/javascript">
+                      						$('#marco').marquesina('#anterior','#siguiente');
+                      							//$('#marco').marquesina();
+                      				</script>
+                    
+                       <div id="container">
+                        <!--Pestaña 1 activa por defecto-->
+                        <input id="tab-1" type="radio" name="tab-group" checked="checked" />
+                        <label for="tab-1">Nuevo Laredo, Tamaulipas</label>
+                        <!--Pestaña 2 inactiva por defecto-->
+                        <input id="tab-2" type="radio" name="tab-group" />
+                        <label for="tab-2">Ciudad Juarez, Chihuahua</label>
+                        <!--Pestaña 3 inactiva por defecto-->
+                        <input id="tab-3" type="radio" name="tab-group" />
+                        <label for="tab-3">Tijuana, B.C.</label>
 
 
-
- <!--Título-->
- 
- <!--Contenedor-->
- <div id="container">
-  <!--Pestaña 1 activa por defecto-->
-  <input id="tab-1" type="radio" name="tab-group" checked="checked" />
-  <label for="tab-1">Nuevo Laredo, Tamaulipas</label>
-  <!--Pestaña 2 inactiva por defecto-->
-  <input id="tab-2" type="radio" name="tab-group" />
-  <label for="tab-2">Ciudad Juarez, Chihuahua</label>
-  <!--Pestaña 3 inactiva por defecto-->
-  <input id="tab-3" type="radio" name="tab-group" />
-  <label for="tab-3">Tijuana, B.C.</label>
-
-
-<!--Pestaña 4 inactiva por defecto-->
-  <input id="tab-4" type="radio" name="tab-group" />
-  <label for="tab-4">Reynosa, Tamaulipas</label>
+                      <!--Pestaña 4 inactiva por defecto-->
+                        <input id="tab-4" type="radio" name="tab-group" />
+                        <label for="tab-4">Reynosa, Tamaulipas</label>
 
 
 
-<!--Pestaña 5 inactiva por defecto-->
-  <input id="tab-5" type="radio" name="tab-group" />
-  <label for="tab-5">Nogales, Sonora</label>
+                      <!--Pestaña 5 inactiva por defecto-->
+                        <input id="tab-5" type="radio" name="tab-group" />
+                        <label for="tab-5">Nogales, Sonora</label>
 
 
 
-<!--Pestaña 6 inactiva por defecto-->
-  <input id="tab-6" type="radio" name="tab-group" />
-  <label for="tab-6">Piedras Negras, Coahuila</label>
+                      <!--Pestaña 6 inactiva por defecto-->
+                        <input id="tab-6" type="radio" name="tab-group" />
+                        <label for="tab-6">Piedras Negras, Coahuila</label>
 
 
 
-  <!--Contenido a mostrar/ocultar-->
-  <div id="content">
-   <!--Contenido de la Pestaña 1-->
-   <div id="content-1" class="apagado">
-                                   
-                                    <ul class="blocks-thumbs">
-                                        <li>
-                                            <a href="#" class="thumb" title="An image"><img src="images/pibli1.png" alt="Post" /></a>
-                                            
-                                                <a href="#" class="header">Fatura@ Soft</a>
-                                                Si contratas antes del 31 de Diciembre recibirás un 20% más del plan contratado.
-                                                ¿Se te están termiando tus facturas en papel?
-                                            
-                                            <a href="#" class="link-button"  onclick="openmodalmc()"><span>Leer Más. &#8594;</span></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="thumb" title="An image"><img src="images/pibli2.png" alt="Post" /></a>
-                                            
-                                                <a href="#" class="header">Laredo Anti-Doping Agency</a>
-                                                10122 Mines Road.<br/>
-                                                FM1472 Suite #5
-                                                Laredo, Tx <br/>
-                                                Tel.:(956) 568-2330<br/>
-                                                Fax.:(956) 568-2341<br/>
-                                                email:laa@laredo.twcbc.com
-                                            
-                                            <a href="#" class="link-button"  onclick="openmodalmc()"><span>Leer Más. &#8594;</span></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="thumb" title="An image"><img src="images/pibli3.png" alt="Post" /></a> 
-                                            <a href="#" class="header">Amigo Transportista</a>
-                                                     Pregunte por las opciones de cobertura de Responsabilidad Civil en USA que le podemos ofrecer.
-                                                     Para que Usted este tranquilo de contar con la mejor protección.
-                                         
-                                            <a href="#" class="link-button"  onclick="openmodalmc()"><span>Leer Más. &#8594;</span></a>
-                                        </li>
-                                    </ul>
-                                
-   </div>
-   <!--Contenido de la Pestaña 2-->
-   <div id="content-2">
-    <p class="column-left"><img src="http://ximg.es/200x150" alt="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, est, nisi enim voluptates dicta quibusdam recusandae eveniet provident non at nostrum nesciunt laudantium omnis aliquam debitis magni expedita cumque tempore.</p>
-    <p class="column-right"><img src="http://ximg.es/200x150" alt="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, molestiae, officia repellendus quasi cumque dolor eius deserunt possimus aliquid neque nam assumenda veniam soluta enim commodi aperiam reprehenderit quia incidunt.</p>
-   </div>
-   <!--Contenido de la Pestaña 3-->
-   <div id="content-3">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, aperiam, enim odit placeat minus ab vero molestiae ad fugit maiores eaque saepe debitis assumenda ut ipsam eius sit repellendus dolore.</p>
-    <ul>
-     <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, in magni illo dolore dicta vero.</li>
-     <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, minus, aspernatur voluptatem doloribus labore modi.</li>
-     <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, exercitationem quia id accusamus beatae sunt? Dolorum mollitia sint debitis delectus.</li>
-    </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, accusantium, provident ab quo sed blanditiis perspiciatis distinctio aut voluptatibus cum odio quaerat iure vel dolorum fugit explicabo suscipit tenetur. Sed!</p>
-   </div>
-    <div id="content-4">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, aperiam, enim odit placeat minus ab vero molestiae ad fugit maiores eaque saepe debitis assumenda ut ipsam eius sit repellendus dolore.</p>
-    <ul>
-     <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, in magni illo dolore dicta vero.</li>
-     <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, minus, aspernatur voluptatem doloribus labore modi.</li>
-     <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, exercitationem quia id accusamus beatae sunt? Dolorum mollitia sint debitis delectus.</li>
-    </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, accusantium, provident ab quo sed blanditiis perspiciatis distinctio aut voluptatibus cum odio quaerat iure vel dolorum fugit explicabo suscipit tenetur. Sed!</p>
-   </div>
-    <div id="content-5">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, aperiam, enim odit placeat minus ab vero molestiae ad fugit maiores eaque saepe debitis assumenda ut ipsam eius sit repellendus dolore.</p>
-    <ul>
-     <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, in magni illo dolore dicta vero.</li>
-     <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, minus, aspernatur voluptatem doloribus labore modi.</li>
-     <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, exercitationem quia id accusamus beatae sunt? Dolorum mollitia sint debitis delectus.</li>
-    </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, accusantium, provident ab quo sed blanditiis perspiciatis distinctio aut voluptatibus cum odio quaerat iure vel dolorum fugit explicabo suscipit tenetur. Sed!</p>
-   </div>
-    <div id="content-6">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, aperiam, enim odit placeat minus ab vero molestiae ad fugit maiores eaque saepe debitis assumenda ut ipsam eius sit repellendus dolore.</p>
-    <ul>
-     <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, in magni illo dolore dicta vero.</li>
-     <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, minus, aspernatur voluptatem doloribus labore modi.</li>
-     <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, exercitationem quia id accusamus beatae sunt? Dolorum mollitia sint debitis delectus.</li>
-    </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, accusantium, provident ab quo sed blanditiis perspiciatis distinctio aut voluptatibus cum odio quaerat iure vel dolorum fugit explicabo suscipit tenetur. Sed!</p>
-   </div>
-  </div>
- </div>
-
-
-
-
-
-
-
-                            <!-- the tabs -->
-
-        
-    				</div>
-                    <!-- ENDS content -->
-     			</div>
+                        <!--Contenido a mostrar/ocultar-->
+                        <div id="content">
+                         <!--Contenido de la Pestaña 1-->
+                         <div id="content-1" class="apagado">
+                                                         
+                                                          <ul class="blocks-thumbs">
+                                                              <li>
+                                                                  <a href="#" class="thumb" title="An image"><img src="images/pibli1.png" alt="Post" /></a>
+                                                                  
+                                                                      <a href="#" class="header">Fatura@ Soft</a>
+                                                                      Si contratas antes del 31 de Diciembre recibirás un 20% más del plan contratado.
+                                                                      ¿Se te están termiando tus facturas en papel?
+                                                                  
+                                                                  <a href="#" class="link-button"  onclick="openmodalmc()"><span>Leer Más. &#8594;</span></a>
+                                                              </li>
+                                                              <li>
+                                                                  <a href="#" class="thumb" title="An image"><img src="images/pibli2.png" alt="Post" /></a>
+                                                                  
+                                                                      <a href="#" class="header">Laredo Anti-Doping Agency</a>
+                                                                      10122 Mines Road.<br/>
+                                                                      FM1472 Suite #5
+                                                                      Laredo, Tx <br/>
+                                                                      Tel.:(956) 568-2330<br/>
+                                                                      Fax.:(956) 568-2341<br/>
+                                                                      email:laa@laredo.twcbc.com
+                                                                  
+                                                                  <a href="#" class="link-button"  onclick="openmodalmc()"><span>Leer Más. &#8594;</span></a>
+                                                              </li>
+                                                              <li>
+                                                                  <a href="#" class="thumb" title="An image"><img src="images/pibli3.png" alt="Post" /></a> 
+                                                                  <a href="#" class="header">Amigo Transportista</a>
+                                                                           Pregunte por las opciones de cobertura de Responsabilidad Civil en USA que le podemos ofrecer.
+                                                                           Para que Usted este tranquilo de contar con la mejor protección.
+                                                               
+                                                                  <a href="#" class="link-button"  onclick="openmodalmc()"><span>Leer Más. &#8594;</span></a>
+                                                              </li>
+                                                          </ul>
+                                                      
+                         </div>
+                         <!--Contenido de la Pestaña 2-->
+                         <div id="content-2">
+                          <p class="column-left"><img src="http://ximg.es/200x150" alt="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, est, nisi enim voluptates dicta quibusdam recusandae eveniet provident non at nostrum nesciunt laudantium omnis aliquam debitis magni expedita cumque tempore.</p>
+                          <p class="column-right"><img src="http://ximg.es/200x150" alt="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, molestiae, officia repellendus quasi cumque dolor eius deserunt possimus aliquid neque nam assumenda veniam soluta enim commodi aperiam reprehenderit quia incidunt.</p>
+                         </div>
+                         <!--Contenido de la Pestaña 3-->
+                         <div id="content-3">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, aperiam, enim odit placeat minus ab vero molestiae ad fugit maiores eaque saepe debitis assumenda ut ipsam eius sit repellendus dolore.</p>
+                          <ul>
+                           <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, in magni illo dolore dicta vero.</li>
+                           <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, minus, aspernatur voluptatem doloribus labore modi.</li>
+                           <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, exercitationem quia id accusamus beatae sunt? Dolorum mollitia sint debitis delectus.</li>
+                          </ul>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, accusantium, provident ab quo sed blanditiis perspiciatis distinctio aut voluptatibus cum odio quaerat iure vel dolorum fugit explicabo suscipit tenetur. Sed!</p>
+                         </div>
+                          <div id="content-4">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, aperiam, enim odit placeat minus ab vero molestiae ad fugit maiores eaque saepe debitis assumenda ut ipsam eius sit repellendus dolore.</p>
+                          <ul>
+                           <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, in magni illo dolore dicta vero.</li>
+                           <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, minus, aspernatur voluptatem doloribus labore modi.</li>
+                           <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, exercitationem quia id accusamus beatae sunt? Dolorum mollitia sint debitis delectus.</li>
+                          </ul>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, accusantium, provident ab quo sed blanditiis perspiciatis distinctio aut voluptatibus cum odio quaerat iure vel dolorum fugit explicabo suscipit tenetur. Sed!</p>
+                         </div>
+                          <div id="content-5">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, aperiam, enim odit placeat minus ab vero molestiae ad fugit maiores eaque saepe debitis assumenda ut ipsam eius sit repellendus dolore.</p>
+                          <ul>
+                           <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, in magni illo dolore dicta vero.</li>
+                           <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, minus, aspernatur voluptatem doloribus labore modi.</li>
+                           <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, exercitationem quia id accusamus beatae sunt? Dolorum mollitia sint debitis delectus.</li>
+                          </ul>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, accusantium, provident ab quo sed blanditiis perspiciatis distinctio aut voluptatibus cum odio quaerat iure vel dolorum fugit explicabo suscipit tenetur. Sed!</p>
+                         </div>
+                          <div id="content-6">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, aperiam, enim odit placeat minus ab vero molestiae ad fugit maiores eaque saepe debitis assumenda ut ipsam eius sit repellendus dolore.</p>
+                          <ul>
+                           <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, in magni illo dolore dicta vero.</li>
+                           <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, minus, aspernatur voluptatem doloribus labore modi.</li>
+                           <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, exercitationem quia id accusamus beatae sunt? Dolorum mollitia sint debitis delectus.</li>
+                          </ul>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, accusantium, provident ab quo sed blanditiis perspiciatis distinctio aut voluptatibus cum odio quaerat iure vel dolorum fugit explicabo suscipit tenetur. Sed!</p>
+                         </div>
+                        </div>
+                  </div>
+   			</div>
                 <!-- ENDS wrapper-main -->
 </body>
 </hmtl>

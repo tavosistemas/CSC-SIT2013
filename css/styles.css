@@ -62,8 +62,10 @@ vertical-align: middle;
 	overflow: hidden;
 	position: relative;
 	width: 850px;
-	margin-bottom: 15px;
+    margin-bottom: 15px;
+    z-index: 1;
 }
+
 #marco ul{
 	margin: 0;
 	padding: 0;
